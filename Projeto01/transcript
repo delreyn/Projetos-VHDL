@@ -1,0 +1,60 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# Loading project CD_projeto01
+# Load canceled
+# Compile of somador.vhd was successful.
+vsim -gui work.somador
+# vsim -gui work.somador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.somador(behave)
+add wave -position insertpoint  \
+sim:/somador/a
+add wave -position end  sim:/somador/a
+add wave -position end  sim:/somador/b
+add wave -position end  sim:/somador/c_in
+add wave -position end  sim:/somador/s
+add wave -position end  sim:/somador/c_out
+add wave -position insertpoint  \
+sim:/somador/c_in
+add wave -position end  sim:/somador/a
+add wave -position end  sim:/somador/b
+add wave -position end  sim:/somador/c_in
+add wave -position end  sim:/somador/s
+add wave -position end  sim:/somador/c_out
+# Compile of somador.vhd was successful.
+add dataflow sim:/somador/line__12/*
+# WARNING: No extended dataflow license exists
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint sim:/somador/line__12/*
+# (vish-4014) No objects found matching '/somador/line__12/*'.
+quit -sim
+vsim -gui work.somador(behave)
+# vsim -gui work.somador(behave) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.somador(behave)
+add wave -position end  sim:/somador/a
+add wave -position end  sim:/somador/b
+add wave -position end  sim:/somador/c_in
+add wave -position end  sim:/somador/s
+add wave -position end  sim:/somador/c_out
+run -continue
+run
+# WARNING: No extended dataflow license exists
+restart -f
+run -all
+vsim work.somador
+# vsim work.somador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.somador(behave)
+# Compile of somador4.vhd failed with 3 errors.
+# Compile of CS.vhd was successful.
+# 2 compiles, 1 failed with 3 errors. 
+# Compile of somador4.vhd was successful.
+# Compile of CS.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
