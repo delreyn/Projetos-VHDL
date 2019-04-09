@@ -4,7 +4,7 @@ In order to download the program to your development board you need to [install]
 Then follow the steps accordilly to which configuration mode you want to perfom:
 
 - JTAG Programming
-	 1. Connect your board the 9V power supply and the USB Cable to the Blaster port of the board (the lefmost);
+	 1. Connect your board to the 9V power supply and the USB Cable to the Blaster port of the board (the lefmost);
 	 2. Perform the Pin Assignment and compile it;
 	 3.   Go to : 	 
 	 > Tools > Programmer 
