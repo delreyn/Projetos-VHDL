@@ -7,9 +7,7 @@ entity projeto is
 		 S_IN : in STD_LOGIC_VECTOR(2 downto 0);
 		butao : in STD_LOGIC;
 	 LED_out : out STD_LOGIC;
-	display7 : out STD_LOGIC_VECTOR(6 downto 0)
-	--MUX_out  : out STD_LOGIC_VECTOR(3 downto 0)
-	);
+	display7 : out STD_LOGIC_VECTOR(6 downto 0));
 end projeto;
 
 architecture bhv of projeto is
@@ -29,7 +27,7 @@ architecture bhv of projeto is
 
  begin
 
---	MUX_out <= MUX; test purposes
+
 	MMUX : MUI port map (a, b, S_IN, butao, MUX, ctrl, LED_out); 
 
 
