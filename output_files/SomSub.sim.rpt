@@ -1,0 +1,971 @@
+Simulator report for SomSub
+Wed Apr 10 15:33:00 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 472 nodes    ;
+; Simulation Coverage         ;      28.39 % ;
+; Total Number of Transitions ; 5114         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                               ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                             ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                          ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                 ;               ;
+; Vector input source                                                                        ; C:/Users/aluno/Desktop/VHDl/Projetos-VHDL-master/SistemaSS/output_files/Projeto.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                  ; On            ;
+; Check outputs                                                                              ; Off                                                                                 ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                 ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      28.39 % ;
+; Total nodes checked                                 ; 472          ;
+; Total output ports checked                          ; 472          ;
+; Total output ports with complete 1/0-value coverage ; 134          ;
+; Total output ports with no 1/0-value coverage       ; 336          ;
+; Total output ports with no 1-value coverage         ; 337          ;
+; Total output ports with no 0-value coverage         ; 337          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                        ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                              ; Output Port Name                                                       ; Output Port Type ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |projeto|a[0]                                                          ; |projeto|a[0]                                                          ; out              ;
+; |projeto|a[1]                                                          ; |projeto|a[1]                                                          ; out              ;
+; |projeto|b[0]                                                          ; |projeto|b[0]                                                          ; out              ;
+; |projeto|b[1]                                                          ; |projeto|b[1]                                                          ; out              ;
+; |projeto|b[2]                                                          ; |projeto|b[2]                                                          ; out              ;
+; |projeto|b[3]                                                          ; |projeto|b[3]                                                          ; out              ;
+; |projeto|LED_out                                                       ; |projeto|LED_out                                                       ; pin_out          ;
+; |projeto|MUX_out[0]                                                    ; |projeto|MUX_out[0]                                                    ; pin_out          ;
+; |projeto|MUX_out[1]                                                    ; |projeto|MUX_out[1]                                                    ; pin_out          ;
+; |projeto|MUX_out[2]                                                    ; |projeto|MUX_out[2]                                                    ; pin_out          ;
+; |projeto|MUX_out[3]                                                    ; |projeto|MUX_out[3]                                                    ; pin_out          ;
+; |projeto|MUI:MMUX|CTRL~3                                               ; |projeto|MUI:MMUX|CTRL~3                                               ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|L0~0                                       ; |projeto|MUI:MMUX|CComp:ccp|L0~0                                       ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|L1~0                                       ; |projeto|MUI:MMUX|CComp:ccp|L1~0                                       ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|L2~0                                       ; |projeto|MUI:MMUX|CComp:ccp|L2~0                                       ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|L3~0                                       ; |projeto|MUI:MMUX|CComp:ccp|L3~0                                       ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|igul_out~0                                 ; |projeto|MUI:MMUX|CComp:ccp|igul_out~0                                 ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|igul_out~1                                 ; |projeto|MUI:MMUX|CComp:ccp|igul_out~1                                 ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|igul_out                                   ; |projeto|MUI:MMUX|CComp:ccp|igul_out                                   ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~1                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~1                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~2                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~2                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~3                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~3                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~4                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~4                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~5                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~5                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~6                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~6                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~7                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~7                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~8                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~8                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~9                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~9                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~10                                 ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~10                                 ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~11                                 ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~11                                 ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out                                    ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out                                    ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~0                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~0                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~1                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~1                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~2                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~2                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~3                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~3                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~4                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~4                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~5                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~5                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~6                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~6                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~7                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~7                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~8                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~8                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~9                                  ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~9                                  ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~10                                 ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~10                                 ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~11                                 ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out~11                                 ; out0             ;
+; |projeto|MUI:MMUX|CComp:ccp|MeQ_out                                    ; |projeto|MUI:MMUX|CComp:ccp|MeQ_out                                    ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k3|s~0                                   ; |projeto|MUI:MMUX|Subt:sut|CS:k3|s~0                                   ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k3|s                                     ; |projeto|MUI:MMUX|Subt:sut|CS:k3|s                                     ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k2|s~0                                   ; |projeto|MUI:MMUX|Subt:sut|CS:k2|s~0                                   ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k2|s                                     ; |projeto|MUI:MMUX|Subt:sut|CS:k2|s                                     ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out~0                               ; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out~0                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out~1                               ; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out~1                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out~2                               ; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out~2                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out~3                               ; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out~3                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out                                 ; |projeto|MUI:MMUX|Subt:sut|CS:k2|c_out                                 ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k1|s~0                                   ; |projeto|MUI:MMUX|Subt:sut|CS:k1|s~0                                   ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k1|s                                     ; |projeto|MUI:MMUX|Subt:sut|CS:k1|s                                     ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out~0                               ; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out~0                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out~1                               ; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out~1                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out~2                               ; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out~2                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out~3                               ; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out~3                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out                                 ; |projeto|MUI:MMUX|Subt:sut|CS:k1|c_out                                 ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k0|s~0                                   ; |projeto|MUI:MMUX|Subt:sut|CS:k0|s~0                                   ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k0|c_out~0                               ; |projeto|MUI:MMUX|Subt:sut|CS:k0|c_out~0                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k0|c_out~2                               ; |projeto|MUI:MMUX|Subt:sut|CS:k0|c_out~2                               ; out0             ;
+; |projeto|MUI:MMUX|Subt:sut|CS:k0|c_out                                 ; |projeto|MUI:MMUX|Subt:sut|CS:k0|c_out                                 ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|s~0                       ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|s~0                       ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|s                         ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|s                         ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~1                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~1                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~2                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~2                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out                     ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out                     ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|s~0                       ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|s~0                       ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|s                         ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|s                         ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out~0                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out~0                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out~1                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out~1                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out~2                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out~2                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out~3                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out~3                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out                     ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:2:uut|c_out                     ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|s~0                       ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|s~0                       ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|s                         ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|s                         ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out~0                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out~0                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out~1                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out~1                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out~2                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out~2                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out~3                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out~3                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out                     ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:1:uut|c_out                     ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:0:uut|s~0                       ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:0:uut|s~0                       ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:0:uut|c_out~0                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:0:uut|c_out~0                   ; out0             ;
+; |projeto|Equal0~0                                                      ; |projeto|Equal0~0                                                      ; out0             ;
+; |projeto|Equal2~0                                                      ; |projeto|Equal2~0                                                      ; out0             ;
+; |projeto|Equal3~0                                                      ; |projeto|Equal3~0                                                      ; out0             ;
+; |projeto|Equal4~0                                                      ; |projeto|Equal4~0                                                      ; out0             ;
+; |projeto|Equal5~0                                                      ; |projeto|Equal5~0                                                      ; out0             ;
+; |projeto|Equal6~0                                                      ; |projeto|Equal6~0                                                      ; out0             ;
+; |projeto|Equal7~0                                                      ; |projeto|Equal7~0                                                      ; out0             ;
+; |projeto|Equal8~0                                                      ; |projeto|Equal8~0                                                      ; out0             ;
+; |projeto|Equal9~0                                                      ; |projeto|Equal9~0                                                      ; out0             ;
+; |projeto|Equal10~0                                                     ; |projeto|Equal10~0                                                     ; out0             ;
+; |projeto|Equal11~0                                                     ; |projeto|Equal11~0                                                     ; out0             ;
+; |projeto|Equal12~0                                                     ; |projeto|Equal12~0                                                     ; out0             ;
+; |projeto|Equal13~0                                                     ; |projeto|Equal13~0                                                     ; out0             ;
+; |projeto|Equal14~0                                                     ; |projeto|Equal14~0                                                     ; out0             ;
+; |projeto|Equal15~0                                                     ; |projeto|Equal15~0                                                     ; out0             ;
+; |projeto|Equal16~0                                                     ; |projeto|Equal16~0                                                     ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~22             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~22             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~31             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~31             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~42             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~42             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|result_node[0]~1 ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|result_node[0]~1 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|result_node[0]   ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|result_node[0]   ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~18             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~18             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~22             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~22             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~31             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~31             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~40             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~40             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~42             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~42             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|result_node[0]~1 ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|result_node[0]~1 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|result_node[0]   ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|result_node[0]   ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~18             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~18             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~22             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~22             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~31             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~31             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~40             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~40             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~42             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~42             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|result_node[0]~1 ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|result_node[0]~1 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|result_node[0]   ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|result_node[0]   ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~22             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~22             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~31             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~31             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~40             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~40             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~42             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~42             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|result_node[0]~1 ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|result_node[0]~1 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|result_node[0]   ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|result_node[0]   ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~22             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~22             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~31             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~31             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~40             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~40             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~42             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~42             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~1 ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~1 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]   ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]   ; out0             ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                           ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                              ; Output Port Name                                                       ; Output Port Type ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |projeto|display7~0                                                    ; |projeto|display7~0                                                    ; out0             ;
+; |projeto|display7~1                                                    ; |projeto|display7~1                                                    ; out0             ;
+; |projeto|display7~2                                                    ; |projeto|display7~2                                                    ; out              ;
+; |projeto|display7~3                                                    ; |projeto|display7~3                                                    ; out0             ;
+; |projeto|display7~4                                                    ; |projeto|display7~4                                                    ; out              ;
+; |projeto|display7~5                                                    ; |projeto|display7~5                                                    ; out              ;
+; |projeto|display7~6                                                    ; |projeto|display7~6                                                    ; out              ;
+; |projeto|display7~7                                                    ; |projeto|display7~7                                                    ; out0             ;
+; |projeto|display7~8                                                    ; |projeto|display7~8                                                    ; out              ;
+; |projeto|display7~9                                                    ; |projeto|display7~9                                                    ; out              ;
+; |projeto|display7~10                                                   ; |projeto|display7~10                                                   ; out              ;
+; |projeto|display7~11                                                   ; |projeto|display7~11                                                   ; out              ;
+; |projeto|display7~12                                                   ; |projeto|display7~12                                                   ; out              ;
+; |projeto|display7~13                                                   ; |projeto|display7~13                                                   ; out0             ;
+; |projeto|display7~14                                                   ; |projeto|display7~14                                                   ; out              ;
+; |projeto|display7~15                                                   ; |projeto|display7~15                                                   ; out              ;
+; |projeto|display7~16                                                   ; |projeto|display7~16                                                   ; out              ;
+; |projeto|display7~17                                                   ; |projeto|display7~17                                                   ; out              ;
+; |projeto|display7~18                                                   ; |projeto|display7~18                                                   ; out              ;
+; |projeto|display7~19                                                   ; |projeto|display7~19                                                   ; out              ;
+; |projeto|display7~20                                                   ; |projeto|display7~20                                                   ; out              ;
+; |projeto|display7~21                                                   ; |projeto|display7~21                                                   ; out0             ;
+; |projeto|display7~22                                                   ; |projeto|display7~22                                                   ; out              ;
+; |projeto|display7~23                                                   ; |projeto|display7~23                                                   ; out              ;
+; |projeto|display7~24                                                   ; |projeto|display7~24                                                   ; out              ;
+; |projeto|display7~25                                                   ; |projeto|display7~25                                                   ; out              ;
+; |projeto|display7~26                                                   ; |projeto|display7~26                                                   ; out              ;
+; |projeto|display7~27                                                   ; |projeto|display7~27                                                   ; out              ;
+; |projeto|display7~28                                                   ; |projeto|display7~28                                                   ; out              ;
+; |projeto|display7~29                                                   ; |projeto|display7~29                                                   ; out0             ;
+; |projeto|display7~30                                                   ; |projeto|display7~30                                                   ; out              ;
+; |projeto|display7~31                                                   ; |projeto|display7~31                                                   ; out              ;
+; |projeto|display7~32                                                   ; |projeto|display7~32                                                   ; out              ;
+; |projeto|display7~33                                                   ; |projeto|display7~33                                                   ; out              ;
+; |projeto|display7~34                                                   ; |projeto|display7~34                                                   ; out              ;
+; |projeto|display7~35                                                   ; |projeto|display7~35                                                   ; out              ;
+; |projeto|display7~36                                                   ; |projeto|display7~36                                                   ; out              ;
+; |projeto|display7~37                                                   ; |projeto|display7~37                                                   ; out0             ;
+; |projeto|display7~38                                                   ; |projeto|display7~38                                                   ; out              ;
+; |projeto|display7~39                                                   ; |projeto|display7~39                                                   ; out              ;
+; |projeto|display7~40                                                   ; |projeto|display7~40                                                   ; out              ;
+; |projeto|display7~41                                                   ; |projeto|display7~41                                                   ; out              ;
+; |projeto|display7~42                                                   ; |projeto|display7~42                                                   ; out              ;
+; |projeto|display7~43                                                   ; |projeto|display7~43                                                   ; out              ;
+; |projeto|display7~44                                                   ; |projeto|display7~44                                                   ; out              ;
+; |projeto|display7~45                                                   ; |projeto|display7~45                                                   ; out0             ;
+; |projeto|display7~46                                                   ; |projeto|display7~46                                                   ; out              ;
+; |projeto|display7~47                                                   ; |projeto|display7~47                                                   ; out              ;
+; |projeto|display7~48                                                   ; |projeto|display7~48                                                   ; out              ;
+; |projeto|display7~49                                                   ; |projeto|display7~49                                                   ; out              ;
+; |projeto|display7~50                                                   ; |projeto|display7~50                                                   ; out              ;
+; |projeto|display7~51                                                   ; |projeto|display7~51                                                   ; out              ;
+; |projeto|display7~52                                                   ; |projeto|display7~52                                                   ; out              ;
+; |projeto|display7~53                                                   ; |projeto|display7~53                                                   ; out0             ;
+; |projeto|display7~54                                                   ; |projeto|display7~54                                                   ; out              ;
+; |projeto|display7~55                                                   ; |projeto|display7~55                                                   ; out              ;
+; |projeto|display7~56                                                   ; |projeto|display7~56                                                   ; out              ;
+; |projeto|display7~57                                                   ; |projeto|display7~57                                                   ; out              ;
+; |projeto|display7~58                                                   ; |projeto|display7~58                                                   ; out              ;
+; |projeto|display7~59                                                   ; |projeto|display7~59                                                   ; out              ;
+; |projeto|display7~60                                                   ; |projeto|display7~60                                                   ; out              ;
+; |projeto|display7~61                                                   ; |projeto|display7~61                                                   ; out0             ;
+; |projeto|display7~62                                                   ; |projeto|display7~62                                                   ; out              ;
+; |projeto|display7~63                                                   ; |projeto|display7~63                                                   ; out              ;
+; |projeto|display7~64                                                   ; |projeto|display7~64                                                   ; out              ;
+; |projeto|display7~65                                                   ; |projeto|display7~65                                                   ; out              ;
+; |projeto|display7~66                                                   ; |projeto|display7~66                                                   ; out              ;
+; |projeto|display7~67                                                   ; |projeto|display7~67                                                   ; out              ;
+; |projeto|display7~68                                                   ; |projeto|display7~68                                                   ; out              ;
+; |projeto|display7~69                                                   ; |projeto|display7~69                                                   ; out0             ;
+; |projeto|display7~70                                                   ; |projeto|display7~70                                                   ; out              ;
+; |projeto|display7~71                                                   ; |projeto|display7~71                                                   ; out              ;
+; |projeto|display7~72                                                   ; |projeto|display7~72                                                   ; out              ;
+; |projeto|display7~73                                                   ; |projeto|display7~73                                                   ; out              ;
+; |projeto|display7~74                                                   ; |projeto|display7~74                                                   ; out              ;
+; |projeto|display7~75                                                   ; |projeto|display7~75                                                   ; out              ;
+; |projeto|display7~76                                                   ; |projeto|display7~76                                                   ; out              ;
+; |projeto|display7~77                                                   ; |projeto|display7~77                                                   ; out0             ;
+; |projeto|display7~78                                                   ; |projeto|display7~78                                                   ; out              ;
+; |projeto|display7~79                                                   ; |projeto|display7~79                                                   ; out              ;
+; |projeto|display7~80                                                   ; |projeto|display7~80                                                   ; out              ;
+; |projeto|display7~81                                                   ; |projeto|display7~81                                                   ; out              ;
+; |projeto|display7~82                                                   ; |projeto|display7~82                                                   ; out              ;
+; |projeto|display7~83                                                   ; |projeto|display7~83                                                   ; out              ;
+; |projeto|display7~84                                                   ; |projeto|display7~84                                                   ; out              ;
+; |projeto|display7~85                                                   ; |projeto|display7~85                                                   ; out0             ;
+; |projeto|display7~86                                                   ; |projeto|display7~86                                                   ; out              ;
+; |projeto|display7~87                                                   ; |projeto|display7~87                                                   ; out              ;
+; |projeto|display7~88                                                   ; |projeto|display7~88                                                   ; out              ;
+; |projeto|display7~89                                                   ; |projeto|display7~89                                                   ; out              ;
+; |projeto|display7~90                                                   ; |projeto|display7~90                                                   ; out              ;
+; |projeto|display7~91                                                   ; |projeto|display7~91                                                   ; out              ;
+; |projeto|display7~92                                                   ; |projeto|display7~92                                                   ; out              ;
+; |projeto|display7~93                                                   ; |projeto|display7~93                                                   ; out0             ;
+; |projeto|display7~94                                                   ; |projeto|display7~94                                                   ; out              ;
+; |projeto|display7~95                                                   ; |projeto|display7~95                                                   ; out              ;
+; |projeto|display7~96                                                   ; |projeto|display7~96                                                   ; out              ;
+; |projeto|display7~97                                                   ; |projeto|display7~97                                                   ; out              ;
+; |projeto|display7~98                                                   ; |projeto|display7~98                                                   ; out              ;
+; |projeto|display7~99                                                   ; |projeto|display7~99                                                   ; out              ;
+; |projeto|display7~100                                                  ; |projeto|display7~100                                                  ; out              ;
+; |projeto|display7~101                                                  ; |projeto|display7~101                                                  ; out0             ;
+; |projeto|display7~102                                                  ; |projeto|display7~102                                                  ; out              ;
+; |projeto|display7~103                                                  ; |projeto|display7~103                                                  ; out              ;
+; |projeto|display7~104                                                  ; |projeto|display7~104                                                  ; out              ;
+; |projeto|display7~105                                                  ; |projeto|display7~105                                                  ; out              ;
+; |projeto|display7~106                                                  ; |projeto|display7~106                                                  ; out              ;
+; |projeto|display7~107                                                  ; |projeto|display7~107                                                  ; out              ;
+; |projeto|display7~108                                                  ; |projeto|display7~108                                                  ; out              ;
+; |projeto|display7~109                                                  ; |projeto|display7~109                                                  ; out              ;
+; |projeto|display7~110                                                  ; |projeto|display7~110                                                  ; out              ;
+; |projeto|display7~111                                                  ; |projeto|display7~111                                                  ; out              ;
+; |projeto|display7~112                                                  ; |projeto|display7~112                                                  ; out              ;
+; |projeto|display7~113                                                  ; |projeto|display7~113                                                  ; out              ;
+; |projeto|display7~114                                                  ; |projeto|display7~114                                                  ; out              ;
+; |projeto|display7~115                                                  ; |projeto|display7~115                                                  ; out              ;
+; |projeto|a[3]                                                          ; |projeto|a[3]                                                          ; out              ;
+; |projeto|S_IN[0]                                                       ; |projeto|S_IN[0]                                                       ; out              ;
+; |projeto|S_IN[1]                                                       ; |projeto|S_IN[1]                                                       ; out              ;
+; |projeto|S_IN[2]                                                       ; |projeto|S_IN[2]                                                       ; out              ;
+; |projeto|butao                                                         ; |projeto|butao                                                         ; out              ;
+; |projeto|display7[0]                                                   ; |projeto|display7[0]                                                   ; pin_out          ;
+; |projeto|display7[1]                                                   ; |projeto|display7[1]                                                   ; pin_out          ;
+; |projeto|display7[2]                                                   ; |projeto|display7[2]                                                   ; pin_out          ;
+; |projeto|display7[3]                                                   ; |projeto|display7[3]                                                   ; pin_out          ;
+; |projeto|display7[4]                                                   ; |projeto|display7[4]                                                   ; pin_out          ;
+; |projeto|display7[5]                                                   ; |projeto|display7[5]                                                   ; pin_out          ;
+; |projeto|display7[6]                                                   ; |projeto|display7[6]                                                   ; pin_out          ;
+; |projeto|MUI:MMUX|CTRL~0                                               ; |projeto|MUI:MMUX|CTRL~0                                               ; out0             ;
+; |projeto|MUI:MMUX|CTRL~1                                               ; |projeto|MUI:MMUX|CTRL~1                                               ; out0             ;
+; |projeto|MUI:MMUX|CTRL~2                                               ; |projeto|MUI:MMUX|CTRL~2                                               ; out              ;
+; |projeto|MUI:MMUX|CTRL~4                                               ; |projeto|MUI:MMUX|CTRL~4                                               ; out0             ;
+; |projeto|MUI:MMUX|CTRL[1]                                              ; |projeto|MUI:MMUX|CTRL[1]                                              ; out              ;
+; |projeto|MUI:MMUX|CTRL[0]                                              ; |projeto|MUI:MMUX|CTRL[0]                                              ; out              ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~0                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~0                                  ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~0                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~0                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~3                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~3                   ; out0             ;
+; |projeto|Equal1~0                                                      ; |projeto|Equal1~0                                                      ; out0             ;
+; |projeto|Equal17~0                                                     ; |projeto|Equal17~0                                                     ; out0             ;
+; |projeto|MUI:MMUX|Equal0~0                                             ; |projeto|MUI:MMUX|Equal0~0                                             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~18             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~18             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~40             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~40             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~41             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~41             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~41             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~18             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~18             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~41             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; out0             ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                           ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                              ; Output Port Name                                                       ; Output Port Type ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |projeto|display7~0                                                    ; |projeto|display7~0                                                    ; out0             ;
+; |projeto|display7~1                                                    ; |projeto|display7~1                                                    ; out0             ;
+; |projeto|display7~2                                                    ; |projeto|display7~2                                                    ; out              ;
+; |projeto|display7~3                                                    ; |projeto|display7~3                                                    ; out0             ;
+; |projeto|display7~4                                                    ; |projeto|display7~4                                                    ; out              ;
+; |projeto|display7~5                                                    ; |projeto|display7~5                                                    ; out              ;
+; |projeto|display7~6                                                    ; |projeto|display7~6                                                    ; out              ;
+; |projeto|display7~7                                                    ; |projeto|display7~7                                                    ; out0             ;
+; |projeto|display7~8                                                    ; |projeto|display7~8                                                    ; out              ;
+; |projeto|display7~9                                                    ; |projeto|display7~9                                                    ; out              ;
+; |projeto|display7~10                                                   ; |projeto|display7~10                                                   ; out              ;
+; |projeto|display7~11                                                   ; |projeto|display7~11                                                   ; out              ;
+; |projeto|display7~12                                                   ; |projeto|display7~12                                                   ; out              ;
+; |projeto|display7~13                                                   ; |projeto|display7~13                                                   ; out0             ;
+; |projeto|display7~14                                                   ; |projeto|display7~14                                                   ; out              ;
+; |projeto|display7~15                                                   ; |projeto|display7~15                                                   ; out              ;
+; |projeto|display7~16                                                   ; |projeto|display7~16                                                   ; out              ;
+; |projeto|display7~17                                                   ; |projeto|display7~17                                                   ; out              ;
+; |projeto|display7~18                                                   ; |projeto|display7~18                                                   ; out              ;
+; |projeto|display7~19                                                   ; |projeto|display7~19                                                   ; out              ;
+; |projeto|display7~20                                                   ; |projeto|display7~20                                                   ; out              ;
+; |projeto|display7~21                                                   ; |projeto|display7~21                                                   ; out0             ;
+; |projeto|display7~22                                                   ; |projeto|display7~22                                                   ; out              ;
+; |projeto|display7~23                                                   ; |projeto|display7~23                                                   ; out              ;
+; |projeto|display7~24                                                   ; |projeto|display7~24                                                   ; out              ;
+; |projeto|display7~25                                                   ; |projeto|display7~25                                                   ; out              ;
+; |projeto|display7~26                                                   ; |projeto|display7~26                                                   ; out              ;
+; |projeto|display7~27                                                   ; |projeto|display7~27                                                   ; out              ;
+; |projeto|display7~28                                                   ; |projeto|display7~28                                                   ; out              ;
+; |projeto|display7~29                                                   ; |projeto|display7~29                                                   ; out0             ;
+; |projeto|display7~30                                                   ; |projeto|display7~30                                                   ; out              ;
+; |projeto|display7~31                                                   ; |projeto|display7~31                                                   ; out              ;
+; |projeto|display7~32                                                   ; |projeto|display7~32                                                   ; out              ;
+; |projeto|display7~33                                                   ; |projeto|display7~33                                                   ; out              ;
+; |projeto|display7~34                                                   ; |projeto|display7~34                                                   ; out              ;
+; |projeto|display7~35                                                   ; |projeto|display7~35                                                   ; out              ;
+; |projeto|display7~36                                                   ; |projeto|display7~36                                                   ; out              ;
+; |projeto|display7~37                                                   ; |projeto|display7~37                                                   ; out0             ;
+; |projeto|display7~38                                                   ; |projeto|display7~38                                                   ; out              ;
+; |projeto|display7~39                                                   ; |projeto|display7~39                                                   ; out              ;
+; |projeto|display7~40                                                   ; |projeto|display7~40                                                   ; out              ;
+; |projeto|display7~41                                                   ; |projeto|display7~41                                                   ; out              ;
+; |projeto|display7~42                                                   ; |projeto|display7~42                                                   ; out              ;
+; |projeto|display7~43                                                   ; |projeto|display7~43                                                   ; out              ;
+; |projeto|display7~44                                                   ; |projeto|display7~44                                                   ; out              ;
+; |projeto|display7~45                                                   ; |projeto|display7~45                                                   ; out0             ;
+; |projeto|display7~46                                                   ; |projeto|display7~46                                                   ; out              ;
+; |projeto|display7~47                                                   ; |projeto|display7~47                                                   ; out              ;
+; |projeto|display7~48                                                   ; |projeto|display7~48                                                   ; out              ;
+; |projeto|display7~49                                                   ; |projeto|display7~49                                                   ; out              ;
+; |projeto|display7~50                                                   ; |projeto|display7~50                                                   ; out              ;
+; |projeto|display7~51                                                   ; |projeto|display7~51                                                   ; out              ;
+; |projeto|display7~52                                                   ; |projeto|display7~52                                                   ; out              ;
+; |projeto|display7~53                                                   ; |projeto|display7~53                                                   ; out0             ;
+; |projeto|display7~54                                                   ; |projeto|display7~54                                                   ; out              ;
+; |projeto|display7~55                                                   ; |projeto|display7~55                                                   ; out              ;
+; |projeto|display7~56                                                   ; |projeto|display7~56                                                   ; out              ;
+; |projeto|display7~57                                                   ; |projeto|display7~57                                                   ; out              ;
+; |projeto|display7~58                                                   ; |projeto|display7~58                                                   ; out              ;
+; |projeto|display7~59                                                   ; |projeto|display7~59                                                   ; out              ;
+; |projeto|display7~60                                                   ; |projeto|display7~60                                                   ; out              ;
+; |projeto|display7~61                                                   ; |projeto|display7~61                                                   ; out0             ;
+; |projeto|display7~62                                                   ; |projeto|display7~62                                                   ; out              ;
+; |projeto|display7~63                                                   ; |projeto|display7~63                                                   ; out              ;
+; |projeto|display7~64                                                   ; |projeto|display7~64                                                   ; out              ;
+; |projeto|display7~65                                                   ; |projeto|display7~65                                                   ; out              ;
+; |projeto|display7~66                                                   ; |projeto|display7~66                                                   ; out              ;
+; |projeto|display7~67                                                   ; |projeto|display7~67                                                   ; out              ;
+; |projeto|display7~68                                                   ; |projeto|display7~68                                                   ; out              ;
+; |projeto|display7~69                                                   ; |projeto|display7~69                                                   ; out0             ;
+; |projeto|display7~70                                                   ; |projeto|display7~70                                                   ; out              ;
+; |projeto|display7~71                                                   ; |projeto|display7~71                                                   ; out              ;
+; |projeto|display7~72                                                   ; |projeto|display7~72                                                   ; out              ;
+; |projeto|display7~73                                                   ; |projeto|display7~73                                                   ; out              ;
+; |projeto|display7~74                                                   ; |projeto|display7~74                                                   ; out              ;
+; |projeto|display7~75                                                   ; |projeto|display7~75                                                   ; out              ;
+; |projeto|display7~76                                                   ; |projeto|display7~76                                                   ; out              ;
+; |projeto|display7~77                                                   ; |projeto|display7~77                                                   ; out0             ;
+; |projeto|display7~78                                                   ; |projeto|display7~78                                                   ; out              ;
+; |projeto|display7~79                                                   ; |projeto|display7~79                                                   ; out              ;
+; |projeto|display7~80                                                   ; |projeto|display7~80                                                   ; out              ;
+; |projeto|display7~81                                                   ; |projeto|display7~81                                                   ; out              ;
+; |projeto|display7~82                                                   ; |projeto|display7~82                                                   ; out              ;
+; |projeto|display7~83                                                   ; |projeto|display7~83                                                   ; out              ;
+; |projeto|display7~84                                                   ; |projeto|display7~84                                                   ; out              ;
+; |projeto|display7~85                                                   ; |projeto|display7~85                                                   ; out0             ;
+; |projeto|display7~86                                                   ; |projeto|display7~86                                                   ; out              ;
+; |projeto|display7~87                                                   ; |projeto|display7~87                                                   ; out              ;
+; |projeto|display7~88                                                   ; |projeto|display7~88                                                   ; out              ;
+; |projeto|display7~89                                                   ; |projeto|display7~89                                                   ; out              ;
+; |projeto|display7~90                                                   ; |projeto|display7~90                                                   ; out              ;
+; |projeto|display7~91                                                   ; |projeto|display7~91                                                   ; out              ;
+; |projeto|display7~92                                                   ; |projeto|display7~92                                                   ; out              ;
+; |projeto|display7~93                                                   ; |projeto|display7~93                                                   ; out0             ;
+; |projeto|display7~94                                                   ; |projeto|display7~94                                                   ; out              ;
+; |projeto|display7~95                                                   ; |projeto|display7~95                                                   ; out              ;
+; |projeto|display7~96                                                   ; |projeto|display7~96                                                   ; out              ;
+; |projeto|display7~97                                                   ; |projeto|display7~97                                                   ; out              ;
+; |projeto|display7~98                                                   ; |projeto|display7~98                                                   ; out              ;
+; |projeto|display7~99                                                   ; |projeto|display7~99                                                   ; out              ;
+; |projeto|display7~100                                                  ; |projeto|display7~100                                                  ; out              ;
+; |projeto|display7~101                                                  ; |projeto|display7~101                                                  ; out0             ;
+; |projeto|display7~102                                                  ; |projeto|display7~102                                                  ; out              ;
+; |projeto|display7~103                                                  ; |projeto|display7~103                                                  ; out              ;
+; |projeto|display7~104                                                  ; |projeto|display7~104                                                  ; out              ;
+; |projeto|display7~105                                                  ; |projeto|display7~105                                                  ; out              ;
+; |projeto|display7~106                                                  ; |projeto|display7~106                                                  ; out              ;
+; |projeto|display7~107                                                  ; |projeto|display7~107                                                  ; out              ;
+; |projeto|display7~108                                                  ; |projeto|display7~108                                                  ; out              ;
+; |projeto|display7~109                                                  ; |projeto|display7~109                                                  ; out              ;
+; |projeto|display7~110                                                  ; |projeto|display7~110                                                  ; out              ;
+; |projeto|display7~111                                                  ; |projeto|display7~111                                                  ; out              ;
+; |projeto|display7~112                                                  ; |projeto|display7~112                                                  ; out              ;
+; |projeto|display7~113                                                  ; |projeto|display7~113                                                  ; out              ;
+; |projeto|display7~114                                                  ; |projeto|display7~114                                                  ; out              ;
+; |projeto|display7~115                                                  ; |projeto|display7~115                                                  ; out              ;
+; |projeto|a[2]                                                          ; |projeto|a[2]                                                          ; out              ;
+; |projeto|a[3]                                                          ; |projeto|a[3]                                                          ; out              ;
+; |projeto|S_IN[0]                                                       ; |projeto|S_IN[0]                                                       ; out              ;
+; |projeto|S_IN[1]                                                       ; |projeto|S_IN[1]                                                       ; out              ;
+; |projeto|S_IN[2]                                                       ; |projeto|S_IN[2]                                                       ; out              ;
+; |projeto|butao                                                         ; |projeto|butao                                                         ; out              ;
+; |projeto|display7[0]                                                   ; |projeto|display7[0]                                                   ; pin_out          ;
+; |projeto|display7[1]                                                   ; |projeto|display7[1]                                                   ; pin_out          ;
+; |projeto|display7[2]                                                   ; |projeto|display7[2]                                                   ; pin_out          ;
+; |projeto|display7[3]                                                   ; |projeto|display7[3]                                                   ; pin_out          ;
+; |projeto|display7[4]                                                   ; |projeto|display7[4]                                                   ; pin_out          ;
+; |projeto|display7[5]                                                   ; |projeto|display7[5]                                                   ; pin_out          ;
+; |projeto|display7[6]                                                   ; |projeto|display7[6]                                                   ; pin_out          ;
+; |projeto|MUI:MMUX|CTRL~0                                               ; |projeto|MUI:MMUX|CTRL~0                                               ; out0             ;
+; |projeto|MUI:MMUX|CTRL~1                                               ; |projeto|MUI:MMUX|CTRL~1                                               ; out0             ;
+; |projeto|MUI:MMUX|CTRL~2                                               ; |projeto|MUI:MMUX|CTRL~2                                               ; out              ;
+; |projeto|MUI:MMUX|CTRL~4                                               ; |projeto|MUI:MMUX|CTRL~4                                               ; out0             ;
+; |projeto|MUI:MMUX|CTRL[1]                                              ; |projeto|MUI:MMUX|CTRL[1]                                              ; out              ;
+; |projeto|MUI:MMUX|CTRL[0]                                              ; |projeto|MUI:MMUX|CTRL[0]                                              ; out              ;
+; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~0                                  ; |projeto|MUI:MMUX|CComp:ccp|MaQ_out~0                                  ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~0                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~0                   ; out0             ;
+; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~3                   ; |projeto|MUI:MMUX|somador4:sot|CS:\gen:3:uut|c_out~3                   ; out0             ;
+; |projeto|Equal1~0                                                      ; |projeto|Equal1~0                                                      ; out0             ;
+; |projeto|Equal17~0                                                     ; |projeto|Equal17~0                                                     ; out0             ;
+; |projeto|MUI:MMUX|Equal0~0                                             ; |projeto|MUI:MMUX|Equal0~0                                             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~18             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~18             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~40             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~40             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux4|mux_3nc:auto_generated|_~41             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux3|mux_3nc:auto_generated|_~41             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux2|mux_3nc:auto_generated|_~41             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux1|mux_3nc:auto_generated|_~41             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~0              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~0              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~9              ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~9              ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; out0             ;
+; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; |projeto|MUI:MMUX|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; out0             ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Apr 10 15:32:58 2019
+Info: Command: quartus_sim --simulation_results_format=VWF SomSub -c SomSub
+Info (324025): Using vector source file "C:/Users/aluno/Desktop/VHDl/Projetos-VHDL-master/SistemaSS/output_files/Projeto.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      28.39 %
+Info (328052): Number of transitions in simulation is 5114
+Info (324045): Vector file SomSub.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Warning (292006): Can't contact license server "1800@LASIC.UFRN.BR" -- this server will be ignored
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 257 megabytes
+    Info: Processing ended: Wed Apr 10 15:33:01 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+
